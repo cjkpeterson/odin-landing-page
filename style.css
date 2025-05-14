@@ -35,8 +35,8 @@ body > * {
 
 /* I think change to just flex for all */
 .first {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     /* flex: auto; */
 }
 
@@ -70,9 +70,47 @@ body > * {
 
 button {
     background-color: #3882F6;
+    border-radius: 10px;
     color: #F9FAF8;
     font-size: 18px;
     font-weight: 700;
     padding: 8px 24px;
+}
 
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1F2937;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* flex: auto; */
+}
+
+.second .top {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.second .bottom {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.grouper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    text-align: center;
+}
+
+.image {
+    width: 160px;
+    height: 160px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #3882F6;
+    border-radius: 15px;
 }
