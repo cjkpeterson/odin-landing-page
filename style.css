@@ -1,6 +1,8 @@
 /* style.css */
 
 body {
+    font-size: 18px;
+    color: #E5E7EB;
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -15,13 +17,10 @@ body > * {
 }
 
 .header, .first, .footer {
-    background-color: #1F2937;
-}
-/* combine ? */
-.header, .first, .footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #1F2937;
 }
 
 .header .left {
@@ -30,23 +29,50 @@ body > * {
 }
 
 .header .right {
-    font-size: 18px;
-
-    color: #E5E7EB;
     display: flex;
     gap: 20px;
+}
+
+/* I think change to just flex for all */
+.first {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    /* flex: auto; */
 }
 
 .first .left {
     display: flex;
     flex-direction: column;
     align-items: start;
-
+    flex: 1;
+    gap: 16px;
 }
 
+.first .left > * {
+    margin: 0px;
+}
 
+.first .left .top {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    margin-bottom: -12px;
+}
 
+.first .right {
+    background-color: rgb(116, 118, 124);
+    flex: 1;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 24px;
 
 }
