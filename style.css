@@ -35,9 +35,9 @@ body > * {
 
 /* I think change to just flex for all */
 .first {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    /* flex: auto; */
+    padding-top: 100px;
+    padding-bottom: 140px;
+    flex: auto;
 }
 
 .first .left {
@@ -46,6 +46,7 @@ body > * {
     align-items: start;
     flex: 1;
     gap: 16px;
+    padding-right: 12px;
 }
 
 .first .left > * {
@@ -74,8 +75,10 @@ button {
     color: #F9FAF8;
     font-size: 18px;
     font-weight: 700;
-    padding: 8px 24px;
+    padding: 12px 34px;
+    border-width: 0;
 }
+
 
 .second {
     display: flex;
@@ -83,8 +86,8 @@ button {
     align-items: center;
     color: #1F2937;
     padding-top: 20px;
-    padding-bottom: 20px;
-    /* flex: auto; */
+    padding-bottom: 80px;
+    flex: auto;
 }
 
 .second .top {
@@ -113,4 +116,77 @@ button {
     border-width: 5px;
     border-color: #3882F6;
     border-radius: 15px;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    color: #1F2937;
+    padding-left: 335px;
+    padding-right: 290px;
+    padding-top: 125px;
+    padding-bottom: 80px;
+    flex: auto;
+}
+
+.third .quote {
+    font-weight: 200;
+    /* Not working for some reason */
+    font-size: 36px;
+    /* transform: skewX(-6deg); */
+    margin-bottom: -12px;
+}
+
+.third .quoter {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.fourth {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex: auto;
+    justify-content: center;
+}
+
+.blue {
+    display: flex;
+    background-color: #3882F6;
+    border-radius: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 125px;
+    padding-right: 125px;
+    flex: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blue .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.blue .left .top {
+    font-weight: bold;
+    font-size: 24px;
+    color: #F9FAF8;
+    margin-bottom: -14px;
+}
+
+.blue .right {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #F9FAF8;
+}
+.footer {
+    color: #F9FAF8;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
